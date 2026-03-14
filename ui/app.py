@@ -7,7 +7,7 @@ from bot.logging_config import setup_logging
 
 logger = setup_logging()
 
-st.title("Binance Futures Testnet Trading Bot")
+st.title("Binance Testnet Trading Bot")
 
 symbol = st.text_input("Symbol", "BTCUSDT")
 
