@@ -16,7 +16,8 @@ class OrderService:
             symbol=symbol,
             side=side,
             type="MARKET",
-            quantity=quantity
+            quantity=quantity,
+            recvWindow=10000
         )
 
 
@@ -28,7 +29,8 @@ class OrderService:
             type="LIMIT",
             quantity=quantity,
             price=price,
-            timeInForce="GTC"
+            timeInForce="GTC",
+            recvWindow=10000
         )
 
 
@@ -39,7 +41,8 @@ class OrderService:
             side=side,
             type="STOP_MARKET",
             stopPrice=stop_price,
-            quantity=quantity
+            quantity=quantity,
+            recvWindow=10000
         )
 
 
