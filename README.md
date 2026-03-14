@@ -19,6 +19,42 @@ python -m cli.cli --symbol BTCUSDT --side BUY --type STOP_MARKET --quantity 0.00
 
 streamlit run ui/app.py
 
+## How to Run Examples
+
+### Example 1 — Market Order
+
+```bash
+python -m cli.cli --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
+```
+
+### Example 2 — Limit Order
+
+```bash
+python -m cli.cli --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price 70000
+```
+
+### Example 3 — Stop Market Order
+
+```bash
+python -m cli.cli --symbol BTCUSDT --side BUY --type STOP_MARKET --quantity 0.001 --price 65000
+```
+
+### Example 4 — Using the UI
+
+```bash
+streamlit run ui/app.py
+```
+
+Then open the browser:
+
+```
+http://localhost:8501
+```
+
+Use the UI form to place orders.
+
+---
+
 ## Features
 
 - Buy Market orders
