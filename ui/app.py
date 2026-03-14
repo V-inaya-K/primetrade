@@ -3,6 +3,9 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 import streamlit as st
 from bot.orders import OrderService
+from bot.logging_config import setup_logging
+
+logger = setup_logging()
 
 st.title("Binance Futures Testnet Trading Bot")
 
