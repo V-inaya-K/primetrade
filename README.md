@@ -1,4 +1,4 @@
-# Binance Futures Testnet Trading Bot Task 💻
+# Binance Testnet Trading Bot Task 💻
 
 ## Setup
 
